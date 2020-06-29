@@ -1,15 +1,15 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function HeaderPage() {
+const Header = () => {
   const activeStyle = { color: "#F15B2A" };
   return (
     <nav>
-      <NavLink exact to="/" activeStyle={activeStyle}>
+      <NavLink to="/" activeStyle={activeStyle} exact>
         Home
       </NavLink>
       {" | "}
-      <NavLink exact to="/courses" activeStyle={activeStyle}>
+      <NavLink to="/courses" activeStyle={activeStyle}>
         Courses
       </NavLink>
       {" | "}
@@ -18,6 +18,6 @@ function HeaderPage() {
       </NavLink>
     </nav>
   );
-}
+};
 
-export default HeaderPage;
+export default Header;
