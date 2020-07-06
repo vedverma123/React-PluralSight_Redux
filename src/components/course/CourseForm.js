@@ -12,6 +12,7 @@ function CourseForm(props) {
     onChange,
     saving = false,
   } = props;
+
   return (
     <form onSubmit={onSave}>
       <h2>{course.id ? "Edit " : "Add "}Course</h2>

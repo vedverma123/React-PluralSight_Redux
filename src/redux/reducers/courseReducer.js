@@ -11,6 +11,7 @@ export default function courseReducer(state = initialState.courses, action) {
       return state.map((course) =>
         course.id === action.course.id ? action.course : course
       );
+
     default:
       return state;
   }

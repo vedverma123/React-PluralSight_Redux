@@ -5,12 +5,12 @@ export function loadCourseSuccess(courses) {
   return { type: actionTypes.LOAD_COURSE_SUCCESS, courses };
 }
 
-export function updateCourseSuccess(courses) {
-  return { type: actionTypes.UPDATE_COURSE_SUCCESS, courses };
+export function updateCourseSuccess(course) {
+  return { type: actionTypes.UPDATE_COURSE_SUCCESS, course };
 }
 
-export function createCourseSuccess(courses) {
-  return { type: actionTypes.CREATE_COURSE_SUCCESS, courses };
+export function createCourseSuccess(course) {
+  return { type: actionTypes.CREATE_COURSE_SUCCESS, course };
 }
 
 export function loadCourses() {
